@@ -1,0 +1,9 @@
+﻿
+@model IEnumerable<Demo1.DAL.News>
+<h6 class="text-danger">مهم ترین اخبار</h6>
+<div class="border border-1">
+    @foreach (var item in Model)
+    {
+        <h6>@item.Title</h6>
+    }
+</div>

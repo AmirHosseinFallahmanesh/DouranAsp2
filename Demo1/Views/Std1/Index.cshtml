@@ -1,0 +1,37 @@
+﻿@model List<Demo1.DAL.Student>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<div class="container">
+    
+    <a href="~/std1/create" class="btn btn-info">create new student</a>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Firstname</th>
+                <th>Lastname</th>
+                <th>Age</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+            <tr>
+                <td>@item.Name</td>
+                <td>@item.Surname</td>
+                <td>@item.Age</td>
+                <td><a href="~/std1/edit/@item.StudentId" class="btn btn-warning">Edit</a><a href="~/std1/delete/@item.StudentId" class="btn btn-danger">Delete</a></td>
+            </tr>
+            }
+
+
+        </tbody>
+    </table>
+</div>
+
+
+
+
