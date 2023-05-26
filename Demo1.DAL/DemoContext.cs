@@ -12,5 +12,7 @@ namespace Demo1.DAL
         public DbSet<Student> Students { get; set; }
         public DbSet<Ads> Ads { get; set; }
         public DbSet<News> News { get; set; }
+
+        //خودت چطوری
     }
 }
